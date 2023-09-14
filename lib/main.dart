@@ -4,7 +4,7 @@ import 'package:partice_project/utils/route_name.dart';
 import 'package:partice_project/utils/routes.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {

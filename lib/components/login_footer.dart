@@ -16,35 +16,35 @@ class LoginFooter extends StatelessWidget {
         Gap(isWidth: false, isHeight: true, height: height * 0.019),
         const OrDivider(),
         Gap(isWidth: false, isHeight: true, height: height * 0.015),
-        Row(
-          children: [
-            AppButton(
-              onPress: () {},
-              iconBtn: true,
-              child: const Center(
-                child: Image(
-                  width: 35,
-                  height: 35,
-                  fit: BoxFit.contain,
-                  image: AssetImage("lib/assets/icons/google.png"),
-                ),
-              ),
-            ),
-            const Gap(isWidth: true, isHeight: false, width: 10),
-            AppButton(
-              onPress: () {},
-              iconBtn: true,
-              child: const Center(
-                child: Image(
-                  width: 35,
-                  height: 35,
-                  fit: BoxFit.contain,
-                  image: AssetImage("lib/assets/icons/facebook.png"),
-                ),
-              ),
-            ),
-          ],
-        ),
+        // Row(
+        //   children: [
+        //     AppButton(
+        //       onPress: () {},
+        //       iconBtn: true,
+        //       child: const Center(
+        //         child: Image(
+        //           width: 35,
+        //           height: 35,
+        //           fit: BoxFit.contain,
+        //           image: AssetImage("lib/assets/icons/google.png"),
+        //         ),
+        //       ),
+        //     ),
+        //     const Gap(isWidth: true, isHeight: false, width: 10),
+        //     AppButton(
+        //       onPress: () {},
+        //       iconBtn: true,
+        //       child: const Center(
+        //         child: Image(
+        //           width: 35,
+        //           height: 35,
+        //           fit: BoxFit.contain,
+        //           image: AssetImage("lib/assets/icons/facebook.png"),
+        //         ),
+        //       ),
+        //     ),
+        //   ],
+        // ),
         Gap(isWidth: false, isHeight: true, height: height * 0.02),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

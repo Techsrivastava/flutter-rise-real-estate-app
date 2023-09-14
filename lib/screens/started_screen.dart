@@ -4,7 +4,8 @@ import 'package:partice_project/components/gap.dart';
 import 'package:partice_project/components/login_footer.dart';
 import 'package:partice_project/components/login_option.dart';
 import 'package:partice_project/constant/colors.dart';
-import 'package:partice_project/utils/route_name.dart';
+import 'package:partice_project/screens/dashboard_screen.dart';
+
 import 'dart:io' show Platform;
 
 class StartedScreen extends StatefulWidget {
@@ -25,16 +26,16 @@ class _StartedScreenState extends State<StartedScreen> {
               horizontal: 15, vertical: Platform.isIOS ? 0 : 15),
           child: Column(
             children: [
-              Row(
-                children: const [
+              const Row(
+                children: [
                   LoginOption(path: "lib/assets/images/login1.png"),
                   Gap(isWidth: true, isHeight: false, width: 10),
                   LoginOption(path: "lib/assets/images/login2.png"),
                 ],
               ),
               Gap(isWidth: false, isHeight: true, height: height * 0.01),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   LoginOption(path: "lib/assets/images/login3.png"),
                   Gap(isWidth: true, isHeight: false, width: 10),
                   LoginOption(path: "lib/assets/images/login4.png"),
@@ -58,9 +59,12 @@ class _StartedScreenState extends State<StartedScreen> {
               Gap(isWidth: false, isHeight: true, height: height * 0.035),
               AppButton(
                 onPress: () {
-                  Navigator.pushNamed(context, RoutesName.loginScreen);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: ((context) => const DashboardScreen())));
                 },
-                title: "Continue with Email",
+                title: "Continue with Whats App",
                 textColor: AppColors.whiteColor,
                 isButtonIcon: true,
                 height: height * 0.08,

@@ -29,13 +29,13 @@ class _SignupScreenState extends State<SignupScreen> {
                 children: [
                   Gap(isWidth: false, isHeight: true, height: height * 0.01),
                   const HeaderTitle(
-                    title: "Create your ",
+                    title: "Register Your ",
                     bottomTitle:
                         "quis nostrud exercitation ullamco laboris nisi ut.",
                     subtitle: "account",
                   ),
                   Gap(isWidth: false, isHeight: true, height: height * 0.04),
-                  SignupForm()
+                  const SignupForm()
                 ],
               ),
             )),

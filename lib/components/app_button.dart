@@ -23,7 +23,7 @@ class AppButton extends StatelessWidget {
       this.iconBtn = false,
       this.isButtonIcon = false,
       this.icon = const Icon(
-        Icons.email,
+        Icons.whatshot_outlined,
         color: AppColors.whiteColor,
         size: 25,
       ),

@@ -18,10 +18,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   List<Widget> _buildScreen() {
     return [
-      HomeScreen(),
-      SearchScreen(),
-      FavouriteScreen(),
-      AccountProfileScreen()
+      const HomeScreen(),
+      const SearchScreen(),
+      const FavouriteScreen(),
+      const AccountProfileScreen()
     ];
   }
 
@@ -30,19 +30,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
       PersistentBottomNavBarItem(
           icon: const Icon(CupertinoIcons.home),
           activeColorPrimary: AppColors.textPrimary,
-          inactiveColorPrimary: Color(0xffA0A2AF)),
+          inactiveColorPrimary: const Color(0xffA0A2AF)),
       PersistentBottomNavBarItem(
           icon: const Icon(CupertinoIcons.search),
           activeColorPrimary: AppColors.textPrimary,
-          inactiveColorPrimary: Color(0xffA0A2AF)),
+          inactiveColorPrimary: const Color(0xffA0A2AF)),
       PersistentBottomNavBarItem(
           icon: const Icon(CupertinoIcons.heart),
           activeColorPrimary: AppColors.textPrimary,
-          inactiveColorPrimary: Color(0xffA0A2AF)),
+          inactiveColorPrimary: const Color(0xffA0A2AF)),
       PersistentBottomNavBarItem(
           icon: const Icon(CupertinoIcons.person),
           activeColorPrimary: AppColors.textPrimary,
-          inactiveColorPrimary: Color(0xffA0A2AF)),
+          inactiveColorPrimary: const Color(0xffA0A2AF)),
     ];
   }
 
